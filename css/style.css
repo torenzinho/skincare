@@ -336,8 +336,9 @@ margin: 0 auto;
     gap: 36px 24px;
 }
 
-.pulsanteind{
+.pulsanteind {
     position: relative;
     left: 128px;
-    bottom: 36px
+    bottom: 36px;
+    margin-bottom: 96px;
 }
