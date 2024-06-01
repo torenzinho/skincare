@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: "Rozha One", "Raleway", sans-serif;
+    font-variant-numeric: lining-nums proportional-nums;
 }
 
 
@@ -162,6 +163,11 @@ p {
 .fatto {
    text-align: center;
 }
+
+.fatto h6 {
+    margin-top: 10px;
+}
+
 .prodotti_home h3 {
 margin-bottom: 24px;
 }
@@ -281,6 +287,57 @@ ol li {
     margin-bottom: 48px;
 }
 
+.nomeprodotto {
+    border-radius: 80px;
+    background: #FFF4E0;
+    text-align: center;
+font-weight: 600;
+text-transform: uppercase;
+width: 256px;
+padding: 6px 12px;
+margin: 0;
+}
 
 
+.foto_prezzo img {
+    width: 204px;
+    height: 204px;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+border-radius: 24px;
+}
 
+.card_prodotto {
+    display: inline-flex;
+align-items: center;
+flex-direction: column;
+gap: 12px;
+width: fit-content;
+margin: 0 auto;
+}
+
+.foto_prezzo svg {
+    position: relative;
+    float: right;
+    transform: translate(-100%, 0%);
+    top: 6px;
+    right: 6px;
+}
+
+.foto_prezzo {
+    position: relative;
+    right: -25px;
+}
+
+.grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+    gap: 36px 24px;
+}
+
+.pulsanteind{
+    position: relative;
+    left: 128px;
+    bottom: 36px
+}
