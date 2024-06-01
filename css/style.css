@@ -28,10 +28,8 @@ text-transform: uppercase;
 .nomef {
     color: #000;
     text-decoration: none;
-    font-family: "rozha one";
 font-family: "Rozha One";
 font-size: 26px;
-font-style: normal;
 font-weight: 400;
 line-height: normal;
 text-transform: uppercase;
@@ -80,7 +78,9 @@ header a:hover, footer a:hover {
     text-decoration: underline;
 }
 
-.skincare_home, .prodotti_home, .skincare, .skincare_routine  {
+
+.skincare_home, .prodotti_home, .skincare, .skincare_routine, .test, .testo_tipi_pelle,
+.descrizione_pelle, .consigli, .prodotti{
     margin: 0 23%;
 }
 
@@ -88,7 +88,7 @@ header a:hover, footer a:hover {
     display: flex;
     gap: 36px;
     text-align: center;
-    width: 1000px;
+    width: fit-content;
     margin: 0 auto 64px;
     justify-content: center;
     padding: 0;
@@ -109,22 +109,24 @@ img {
 
 h1 {
 font-size: 96px;
+margin-bottom: 24px;
 }
 
 h2 {
+    margin-top: 96px;
     font-size: 48px;
     margin-bottom: 24px;
 }
 
 h3 {
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 700;
     margin-bottom: 24px;
 }
 
 h5 {
     font-family: "Raleway";
-    font-weight: 800;
+    font-weight: 700;
     width: fit-content;
     margin: 0 auto;
     font-size: 24px;
@@ -190,13 +192,12 @@ h6 {
 }
 
 
-.principi {
+.principi, .tipi_pelle {
     margin: 48px auto 96px;
     max-width: 840px;
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
 align-content: center;
 gap: 24px;
 flex-wrap: wrap;
@@ -215,14 +216,20 @@ align-items: center;
 gap: 12px;
 }
 
-.principi li {
-    display: inline-block;
+.principi li, .tipi_pelle li  {
     margin: 0;
+    list-style: none;
 }
+
 
 .principio p {
     font-size: 14px;
     margin: 0;
+}
+
+.sez_step {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .steps {
@@ -233,10 +240,47 @@ gap: 12px;
     gap: 24px;
 }
 
-.step p {
+.step {
+    margin: 0 auto;
+}
+
+.step p, .tipo_pelle p {
     margin-top: 12px;
     width: 286px;
     font-size: 14px;
 }
+
+.test h2 {
+    margin-bottom: 0;
+}
+
+.test h5{
+ margin: 0 0 24px;
+ color: #ffd280;
+}
+
+ol {
+    font-family: "Raleway";
+    font-weight: 500;
+    font-variant-numeric: lining-nums proportional-nums;
+}
+
+ol li {
+    margin: 12px 0;
+}
+
+.testo_tipi_pelle {
+    margin-bottom: 36px;
+}
+
+.descrizione_pelle, .consigli {
+    margin-bottom: 96px;
+}
+
+.prodotti {
+    margin-bottom: 48px;
+}
+
+
 
 
