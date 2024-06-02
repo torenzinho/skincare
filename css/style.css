@@ -81,7 +81,7 @@ header a:hover, footer a:hover {
 
 
 .skincare_home, .prodotti_home, .skincare, .skincare_routine, .test, .testo_tipi_pelle,
-.descrizione_pelle, .consigli, .prodotti{
+.descrizione_pelle, .consigli, .prodotti, .testo_prodotti, .titolo_prodotti{
     margin: 0 23%;
 }
 
@@ -99,6 +99,7 @@ img {
     max-width: 100%;
     padding: 0;
     margin: 0;
+    object-fit: cover;
 }
 
 .copertina {
@@ -233,13 +234,10 @@ gap: 12px;
     margin: 0;
 }
 
-.sez_step {
-    max-width: 1000px;
-    margin: 0 auto;
-}
+
 
 .steps {
-    max-width: 1000px;
+    width: 980px;
     margin: 48px auto 96px;
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(286px,1fr));
@@ -256,11 +254,11 @@ gap: 12px;
     font-size: 14px;
 }
 
-.test h2 {
+.test h2, .testo_prodotti h2, .titolo_prodotti h2 {
     margin-bottom: 0;
 }
 
-.test h5{
+.test h5, .testo_prodotti h5, .titolo_prodotti h5{
  margin: 0 0 24px;
  color: #ffd280;
 }
@@ -275,7 +273,7 @@ ol li {
     margin: 12px 0;
 }
 
-.testo_tipi_pelle {
+.testo_tipi_pelle, .testo_prodotti {
     margin-bottom: 36px;
 }
 
@@ -329,16 +327,44 @@ margin: 0 auto;
 }
 
 .grid {
-    max-width: 1000px;
-    margin: 0 auto;
+    width: 900px;
+    margin: 96px auto 0;
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
     gap: 36px 24px;
 }
 
 .pulsanteind {
+    margin-top: 64px;
     position: relative;
     left: 128px;
-    bottom: 36px;
     margin-bottom: 96px;
+    width: fit-content;
 }
+
+.elem_centr_prodotti .fatto h6, .elem_centr_tipi_pelle .fatto h6{
+margin-bottom: 320px;
+}
+
+.blocco {
+    width: fit-content;
+    margin: 72px auto 36px;
+}
+
+.sez_prodotti_tutti .grid {
+    margin: 0 auto;
+}
+
+.elementi_prodotto img{
+    width: 387px;
+    height: 484px;
+    border-radius: 36px;
+}
+
+.elementi_prodotto {
+    display: flex;
+    gap: 36px;
+    margin: 0 auto;
+    width: 1000px;
+}
+
