@@ -335,10 +335,10 @@ margin: 0 auto;
 }
 
 .pulsanteind {
-    margin-top: 64px;
+    margin-top: 48px;
     position: relative;
     left: 128px;
-    margin-bottom: 96px;
+    margin-bottom: 120px;
     width: fit-content;
 }
 
@@ -363,8 +363,29 @@ margin-bottom: 320px;
 
 .elementi_prodotto {
     display: flex;
-    gap: 36px;
-    margin: 0 auto;
-    width: 1000px;
+    gap: 64px;
+    margin: 96px auto 0;
+    width: 920px;
 }
 
+h4 {
+    font-family: "Raleway";
+    font-size: 64px;
+    font-weight: 800;
+    margin: 24px 0;
+    text-transform: uppercase;
+
+
+}
+
+.elementi_prodotto .foto_prezzo svg {
+    float: inline-end;
+    transform: translate(0%, -489px);
+    top: 12px;
+    right: 12px;
+}
+
+.elementi_prodotto .pelle_compatibile {
+    display: inline-flex;
+    gap: 12px;
+}
