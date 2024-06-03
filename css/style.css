@@ -237,7 +237,7 @@ gap: 12px;
 
 
 .steps {
-    width: 980px;
+    max-width: 980px;
     margin: 48px auto 96px;
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(286px,1fr));
@@ -309,8 +309,12 @@ border-radius: 24px;
 align-items: center;
 flex-direction: column;
 gap: 12px;
-width: fit-content;
 margin: 0 auto;
+}
+
+.grid a {
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .foto_prezzo svg {
@@ -327,7 +331,8 @@ margin: 0 auto;
 }
 
 .grid {
-    width: 900px;
+
+max-width: 888px;
     margin: 96px auto 0;
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
@@ -347,7 +352,7 @@ margin-bottom: 320px;
 }
 
 .blocco {
-    width: fit-content;
+    width: 240px;
     margin: 72px auto 36px;
 }
 
