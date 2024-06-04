@@ -64,15 +64,12 @@ background: #FFFBF2;
 
 header nav ul, footer nav ul {
     margin: 0;
+    padding: 0;
     list-style: none;
     display: flex;
     align-items: center;
     gap: 25px;
     text-transform: uppercase;
-}
-
-a {
-    text-decoration: none;
 }
 
 header a:hover, footer a:hover, p a:hover, .titolo_prodotti span:hover{
@@ -162,10 +159,16 @@ font-family: "Raleway";
 
 
 
-h3, p, span, a{
+h3, p, span {
  font-family: "Raleway";
  max-width: 694px;
  color: #000;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Raleway";
+    color: #000;
 }
 
 .tipi_home h3, .risultato_test h3{
@@ -324,7 +327,6 @@ font-weight: 600;
 .test h5, .testo_prodotti h5, .titolo_prodotti span{
  margin: 0 0 24px;
  color: #ffd280;
- font-size: 24px;
  font-weight: 700;
 }
 
@@ -392,11 +394,14 @@ border-radius: 24px;
 }
 
 .foto_nome {
-    display: inline-flex;
+    width: 280px;
+    display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 12px;   
+    gap: 12px;
 }
+
+
 
 .card_prodotto {
     display: inline-flex;
@@ -406,9 +411,7 @@ gap: 3px;
 margin: 0 auto;
 }
 
-.grid  .link_scheda{
-    margin: 0 auto;
-}
+
 
 
 
@@ -438,12 +441,19 @@ margin-bottom: 180px;
     margin: 72px auto 216px;
 }
 
+.foto_prezzo_step {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 .elementi_prodotto img{
-    width: 387px;
-    height: 484px;
+    width: 300px;
+    height: 400px;
     border-radius: 36px;
 filter: drop-shadow(0px 6.192px 6.192px rgba(0, 0, 0, 0.25));
 object-fit: cover;
+margin: 0 auto;
 }
 
 .elementi_prodotto p {
@@ -452,15 +462,16 @@ object-fit: cover;
 
 .elementi_prodotto {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: center;
     gap: 48px;
     margin: 96px auto 0;
-    width: 1000px; 
 }
 
 .step_prezzo {
     display: flex;
-    gap: 12px;
+    align-items: center;
+    gap: 6px;
 }
 
 
@@ -489,9 +500,10 @@ margin: 0 0 12px 0;
 .cont_prodotti_per {
 display: flex;
 text-align: center;
-gap: 240px;
-width: 800px;
+justify-content: space-between;
+max-width: 800px;
 margin: 0 auto 216px;
+gap: 48px;
 }
 
 .prodotti_per p {
@@ -518,3 +530,238 @@ text-decoration: underline;
 background-color: white;
 }
 
+
+@media (max-width: 850px) {
+
+    
+    
+    .elementi_prodotto img{
+        width: 216px;
+        height: 300px;
+        border-radius: 36px;
+    filter: drop-shadow(0px 6.192px 6.192px rgba(0, 0, 0, 0.25));
+    object-fit: cover;
+    }
+    
+    .elementi_prodotto p {
+        width: 240px;
+    }
+    
+    .elementi_prodotto {
+        align-items: flex-start;
+       gap: 48px;
+        width: 240px;
+    }
+
+    .step_prezzo svg {
+        margin: 0 auto;
+    }
+    
+    .step_prezzo {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    
+
+    .elementi_prodotto .pelle_compatibile {
+        flex-direction: column;
+    }
+    
+   
+    
+    .adatto {
+    font-size: 18px;
+    }
+    
+    
+    
+    .cont_prodotti_per {
+ flex-direction: column;
+    }
+    
+    .prodotti_per p {
+        margin: 0;
+    }
+    
+    .prodotti_per {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .nomeh {
+        font-size: 24px;
+     }
+        
+        .nomef {
+        font-size: 18px;
+        }
+     
+        header nav, footer {
+            font-size: 10px;
+        }
+        
+        .line {
+            height: 32px;
+        }
+        
+        header nav ul, footer nav ul {
+            gap: 5px;
+        }
+        
+        .skincare_home, .prodotti_home, .skincare, .skincare_routine, .test, .testo_tipi_pelle,
+        .descrizione_pelle, .consigli, .prodotti, .testo_prodotti, .titolo_prodotti{
+            width: 256px;
+        }
+        
+        
+        .row {
+            max-width: 1000px;
+            flex-direction: column;
+            margin: 0 auto 64px;
+           
+        }
+        
+        
+        .copertina {
+            margin-bottom: 24px;
+        }
+        
+        h1 {
+        font-size: 36px;
+        margin-bottom: 18px;
+        }
+        
+        h2 {
+            margin-top: 48px;
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+        
+        h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+        
+        h4 {
+            font-size: 24px;
+            margin: 24px 0;
+        }
+        
+        h5 {
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        h6 {
+            font-size: 16px;
+        }
+        
+        .consigli li, .descrizione_pelle li, .prodotti li, .test li {
+            font-size: 12px;
+        
+            }
+        
+        h3, p, span {
+         max-width: 256px;
+        }
+        
+        .tipi_home h3, .risultato_test h3{
+        margin: 0 auto 24px;
+        }
+        
+        p {
+            margin: 0 0 24px;
+            font-size: 12px;
+            line-height: 135%;
+            font-weight: 500;
+        }
+        
+        
+        .prodotti_home h3 {
+        margin-bottom: 24px;
+        }
+        
+        .icona_pelle {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .pulsante span{
+            
+            background-color: #ffd280;
+            border-radius: 30px;
+            padding: 10px;
+            color: #000;
+            font-size: 10px;
+        }
+        
+        .principi {
+        gap: 48px;
+        }
+        
+        .principio {
+        gap: 10px;
+        }
+        
+        
+        .step {
+            margin: 0 auto;
+        }
+        
+        
+        .step p, .tipo_pelle p {
+            font-size: 12px;
+        }
+        
+        
+        .foto_nome {
+            display: inline-flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 12px;   
+        }
+        
+        .card_prodotto {
+            display: inline-flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 3px;
+        margin: 0 auto;
+        }
+        
+        
+        .elem_centr_prodotti .fatto .pulsante, .elem_centr_tipi_pelle .fatto .pulsante{
+        margin-bottom: 180px;
+        }
+        
+        .blocco {
+            width: 240px;
+            margin: 0 auto 36px;
+        }
+        
+        .sez_prodotti_tutti .grid {
+            margin: 0 auto 96px;
+        }
+        
+        .sez_prodotti_tutti {
+            margin: 72px auto 216px;
+        }
+
+        .elementi_prodotto {
+           gap: 24px;
+            width: 240px;
+        }
+}
+
+@media (max-width: 509px) {
+    .elementi_prodotto {
+        flex-direction: column;
+    }
+}
