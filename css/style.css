@@ -75,11 +75,11 @@ a {
     text-decoration: none;
 }
 
-header a:hover, footer a:hover, p a:hover{
+header a:hover, footer a:hover, p a:hover, .titolo_prodotti span:hover{
     text-decoration: underline;
 }
 
-p a:hover {
+p a:hover, .testo_prodotti a:hover {
     color: #ffd280;
 }
 
@@ -419,11 +419,15 @@ margin-bottom: 180px;
 
 .blocco {
     width: 240px;
-    margin: 72px auto 36px;
+    margin: 0 auto 36px;
 }
 
 .sez_prodotti_tutti .grid {
-    margin: 0 auto 144px;
+    margin: 0 auto 96px;
+}
+
+.sez_prodotti_tutti {
+    margin: 72px auto 216px;
 }
 
 .elementi_prodotto img{
@@ -451,10 +455,6 @@ h4 {
 .elementi_prodotto .pelle_compatibile {
     display: inline-flex;
     gap: 12px;
-}
-
-.titolo_prodotti :hover {
-    text-decoration: underline; 
 }
 
 .consigli li, .descrizione_pelle li, .prodotti li, .test li {
