@@ -92,10 +92,6 @@ p a:hover, .testo_prodotti a:hover {
 
 
 
-.row :hover {
-    fill: #F2B649;
-text-decoration: underline;
-}
 
 
 
@@ -141,6 +137,14 @@ h3 {
     margin-bottom: 24px;
 }
 
+h4 {
+    font-family: "Raleway";
+    font-size: 48px;
+    font-weight: 800;
+    margin: 24px 0;
+    text-transform: uppercase;
+}
+
 h5 {
     font-family: "Raleway";
     font-weight: 700;
@@ -155,6 +159,7 @@ font-weight: 700;
 text-align: center;
 font-family: "Raleway";
 }
+
 
 
 h3, p, span, a{
@@ -217,10 +222,6 @@ margin-bottom: 24px;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-}
-
-.pulsante :hover {
-    background-color: #F2B649;
 }
 
 
@@ -343,7 +344,7 @@ margin: 0 auto 240px;
 .tipo_pelle img {
     width: 286px;
     height: 144px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 12px;
 }
 
@@ -450,11 +451,10 @@ object-fit: cover;
 }
 
 .elementi_prodotto {
-    display: inline-flex;
-    justify-content: center;
+    display: flex;
     align-items: center;
-    gap: 64px;
-    margin-top: 96px;
+    gap: 48px;
+    margin: 96px auto 0;
     width: 1000px; 
 }
 
@@ -463,13 +463,7 @@ object-fit: cover;
     gap: 12px;
 }
 
-h4 {
-    font-family: "Raleway";
-    font-size: 64px;
-    font-weight: 800;
-    margin: 24px 0;
-    text-transform: uppercase;
-}
+
 
 
 .elementi_prodotto .pelle_compatibile {
@@ -490,12 +484,7 @@ font-weight: 700;
 margin: 0 0 12px 0;
 }
 
-h6 {
-    font-size: 32px;
-font-weight: 700;
-text-align: center;
-font-family: "Raleway";
-}
+
 
 .cont_prodotti_per {
 display: flex;
@@ -513,8 +502,19 @@ margin: 0 auto 216px;
     display: flex;
     flex-direction: column;
     gap: 24px;
+    margin: 0 auto;
 }
 
-.prodotti_per div:hover {
-    background-color:#FFE2AD;
+.prodotti_per div:hover, .card_prodotto a:hover, .pulsante:hover, .bordo_tag_pelle:hover, .sez_prodotti_tutti .bordo_step:hover, .elementi_prodotto .bordo_step:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
+.row a:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+text-decoration: underline;
+}
+
+.bordo_step, .bordo_tag_pelle {
+background-color: white;
+}
+
