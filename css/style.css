@@ -137,6 +137,7 @@ h4 {
     font-size: 48px;
     font-weight: 800;
     margin: 24px 0;
+    max-width: 492px;
     text-transform: uppercase;
 }
 
@@ -467,6 +468,7 @@ margin-bottom: 180px;
 .foto_prezzo_step {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 12px;
 }
 
@@ -534,10 +536,14 @@ gap: 96px;
 }
 
 .prodotti_per {
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
     margin: 0 auto;
+}
+
+.per_card_prodotti {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    margin: 48px auto;
 }
 
 .prodotti_per div:hover, .card_prodotto a:hover, .pulsante:hover, .bordo_tag_pelle:hover, .sez_prodotti_tutti .bordo_step:hover, .elementi_prodotto .bordo_step:hover{
@@ -763,6 +769,10 @@ background-color: white;
 @media (max-width: 509px) {
     .elementi_prodotto {
         flex-direction: column;
+    }
+
+    .foto_prezzo_step {
+        margin: 0 auto;
     }
 }
 
