@@ -273,11 +273,15 @@ gap: 12px;
 
 .step .bordo_step {
     border: 0;
+    gap: 10px;
+    padding-bottom: 18px;
 }
 
 .step .numero_step {
     width: 36px;
     height: 36px;
+    outline: 2px solid #FFD280;
+    background-color: white;
 }
 
 .bordo_step, .bordo_tag_pelle {
@@ -287,6 +291,9 @@ gap: 12px;
     border-radius: 80px;
     width: 240px;
 }
+
+
+
 
 .numero_step {
     background-color: #ffd280;
@@ -314,11 +321,11 @@ font-weight: 600;
 
 
 .steps {
-    max-width: 980px;
+    max-width: 800px;
     margin: 48px auto 132px;
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(286px,1fr));
-    gap: 24px;
+    gap: 60px;
 }
 
 .step {
@@ -327,7 +334,6 @@ font-weight: 600;
 
 
 .step p, .tipo_pelle p {
-    margin-top: 12px;
     margin-bottom: 0;
     width: 286px;
     font-size: 14px;
