@@ -546,7 +546,7 @@ gap: 96px;
     margin: 48px auto;
 }
 
-.prodotti_per div:hover, .card_prodotto a:hover, .pulsante:hover, .bordo_tag_pelle:hover, .sez_prodotti_tutti .bordo_step:hover, .elementi_prodotto .bordo_step:hover{
+.card_prodotto a:hover, .pulsante:hover, .bordo_tag_pelle:hover, .sez_prodotti_tutti .bordo_step:hover, .elementi_prodotto .bordo_step:hover{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
