@@ -265,7 +265,37 @@ gap: 12px;
 .principio img {
     width: 216px;
     height: 216px;
+}
 
+.principio .overlay {
+ position: relative;
+}
+
+.principio a:before {
+    content: "";
+    background-color: #FFF4E0;
+    opacity: 90%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+}
+
+.principio a .testo_principio {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    display: none;
+    width: 184px;
+    font-weight: 500;
+}
+
+.principio a:hover .testo_principio, .principio a:hover::before {
+    display: block;
 }
 
 .step p, .elementi_prodotto p {
@@ -528,7 +558,7 @@ text-align: center;
 justify-content: space-between;
 max-width: 1000px;
 margin: 0 auto 216px;
-gap: 96px;
+gap: 84px 36px;
 }
 
 .prodotti_per p {
