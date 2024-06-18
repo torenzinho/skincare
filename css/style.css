@@ -223,6 +223,10 @@ margin-bottom: 24px;
     margin: 48px auto 96px;
 }
 
+.pulsante a {
+    width: fit-content;
+}
+
 .pulsante span{
     
     background-color: #ffd280;
@@ -233,6 +237,7 @@ margin-bottom: 24px;
     font-weight: 700;
     text-transform: uppercase;
 }
+
 
 
 
