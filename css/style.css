@@ -75,13 +75,24 @@ header nav ul, footer nav ul {
     text-transform: uppercase;
 }
 
-header a:hover, footer a:hover, p a:hover, .titolo_prodotti span:hover{
+header a:hover, footer a:hover, .titolo_prodotti span:hover{
     text-decoration: underline;
 }
 
-p a:hover, .testo_prodotti a:hover {
-    color: chocolate;
+p a:hover, span a:hover, .testo_prodotti a:hover {
+    text-decoration: none;
 }
+
+p a, span a {
+    color:chocolate;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+p a:visited, span a:visited {
+    color: sienna;
+}
+
 
 
 .skincare_home, .prodotti_home, .skincare, .skincare_routine, .test, .testo_tipi_pelle,
@@ -163,7 +174,6 @@ text-align: center;
 
 h3, p, span {
  max-width: 694px;
- color: #000;
 }
 
 p,h1, h2, h3,h5, .titolo_prodotti span {
