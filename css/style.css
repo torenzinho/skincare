@@ -334,10 +334,11 @@ gap: 12px;
 .bordo_step, .bordo_tag_pelle {
     display: flex;
     gap: 6px;
-    border:1px solid #ffd280;
+    outline:1px solid #ffd280;
     border-radius: 80px;
     width: 240px;
     align-items: center;
+    align-content: center;
 }
 
 
